@@ -15,30 +15,19 @@ class Program
         double sum1 = 0;
         double sum2 = 0;
         double sum3 = 0;
+
+        for ( int i = 0; i < matrix.GetLength(0); i++){sum = sum + matrix[i , 0];}
+
+        for ( int i = 0; i < matrix.GetLength(0); i++){sum1 = sum1 + matrix[i , 1];}
+
+        for ( int i = 0; i < matrix.GetLength(0); i++){ sum2 = sum2 + matrix[i , 2];}
+
+        for ( int i = 0; i < matrix.GetLength(0); i++){sum3 = sum3 + matrix[i , 3];}
+  
         double average = 0;
         double average1 = 0;
         double average2 = 0;
         double average3 = 0;
-
-        for ( int i = 0; i < matrix.GetLength(0); i++)
-        {
-            sum = sum + matrix[i , 0];            
-        }
-
-        for ( int i = 0; i < matrix.GetLength(0); i++)
-        {
-            sum1 = sum1 + matrix[i , 1];            
-        }
-
-        for ( int i = 0; i < matrix.GetLength(0); i++)
-        {
-            sum2 = sum2 + matrix[i , 2];            
-        }
-
-        for ( int i = 0; i < matrix.GetLength(0); i++)
-        {
-            sum3 = sum3 + matrix[i , 3];            
-        }
 
         average = sum / matrix.GetLength(0);
         average1 = sum1 / matrix.GetLength(0);
